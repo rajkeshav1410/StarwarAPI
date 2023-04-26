@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarwarAPI", "StarwarAPI\St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoLayer", "RepoLayer\RepoLayer.csproj", "{747E1C66-341F-451F-8193-A955BEE7A85F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +46,17 @@ Global
 		{747E1C66-341F-451F-8193-A955BEE7A85F}.Release|x64.Build.0 = Release|Any CPU
 		{747E1C66-341F-451F-8193-A955BEE7A85F}.Release|x86.ActiveCfg = Release|Any CPU
 		{747E1C66-341F-451F-8193-A955BEE7A85F}.Release|x86.Build.0 = Release|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Debug|x64.Build.0 = Debug|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Debug|x86.Build.0 = Debug|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Release|x64.ActiveCfg = Release|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Release|x64.Build.0 = Release|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD5F83C5-21A1-4FC8-9B6F-3FF2D3EF882D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

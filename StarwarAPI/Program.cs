@@ -1,6 +1,8 @@
 // namespace StarwarAPI;
 global using RepoLayer;
 global using RepoLayer.Models;
+global using BusinessLayer;
+global using BusinessLayer.Models;
 global using Microsoft.EntityFrameworkCore;
 
 public class Program {
@@ -9,6 +11,7 @@ public class Program {
 
         builder.Services.AddControllers();
         builder.Services.AddDbContext<DataContext>();
+        builder.Services.AddScoped<IUserService, UserService>();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 

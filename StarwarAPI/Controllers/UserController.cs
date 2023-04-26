@@ -1,34 +1,29 @@
-using Microsoft.AspNetCore.Mvc;
-// using RepoLayer;
-
 namespace StarwarAPI.Controllers;
+
+using Microsoft.AspNetCore.Mvc;
+using BusinessLayer;
+using BusinessLayer.Models;
 
 [ApiController]
 [Route("/api/[controller]")]
 public class UserController: ControllerBase {
-    [HttpGet]
-    public async Task<ActionResult<List<User>>> Get() {
-        List<User> user_list = new List<User>() {
-            new User { 
-                Id = 1, 
-                FirstName = "Peter", 
-                LastName = "Gryffin", 
-                Email = "peter@starwar.com" 
-            },
-            new User { 
-                Id = 1, 
-                FirstName = "Peter", 
-                LastName = "Parker", 
-                Email = "pparker@starwar.com" 
-            },
-            new User { 
-                Id = 1, 
-                FirstName = "Iron", 
-                LastName = "Man", 
-                Email = "avenger@starwar.com" 
-            }
-        };
 
-        return NotFound(user_list);
+    private readonly IUserService _userService;
+
+    public UserController(IUserService userService) {
+        _userService = userService;
     }
+
+    [HttpGet]
+    public async Task<ActionResult<List<User>>> GetAll() {
+        var users = await _userService.getAllUser();
+        return Ok(users);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<User>> Create(createUserDTO userData) {
+        var user = await _userService.createUser(userData);
+        return user;
+    }
+
 }
